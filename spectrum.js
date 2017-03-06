@@ -232,7 +232,7 @@
             replacer = (shouldReplace) ? $(replaceInput).addClass(theme).addClass(opts.className).addClass(opts.replacerClassName) : $([]),
             offsetElement = (shouldReplace) ? replacer : boundElement,
             previewElement = replacer.find(".sp-preview-inner"),
-            initialColor = opts.color || (isInput && boundElement.val()),
+            initialColor = opts.color || boundElement.val(),
             colorOnShow = false,
             currentPreferredFormat = opts.preferredFormat,
             clickoutFiresChange = !opts.showButtons || opts.clickoutFiresChange,
